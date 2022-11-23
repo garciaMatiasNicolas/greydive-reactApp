@@ -28,7 +28,7 @@ const Test = ({cliente, testeador, linkVideo, transcripcion, timeTest, escenario
                     <div>
                         <h2 style={{marginBottom:'40px', marginTop:'60px', fontSize:'1.5rem', fontWeight:'400'}} className="App-title">Tareas</h2>
                         <p className="App-stage">Escenario: {escenario}</p>
-                        {preguntas.map(el => <Questions {...el} />)}
+                        {preguntas.map(el => <Questions key={el.tarea} {...el} />)}
                     </div>
                 </div>
             </div>
